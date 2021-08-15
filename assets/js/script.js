@@ -1,5 +1,5 @@
-var initialTime = 50;
-var time = 50;
+var initialTime = 1000;
+var time = 1000;
 var score = 0;
 var quizCount = 0;
 var setTime;
