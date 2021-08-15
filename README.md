@@ -8,13 +8,9 @@
 
 </p>
 <p align="center">
-    <img src="https://img.shields.io/badge/React-0099ff"  />
-    <img src="https://img.shields.io/badge/Node-33cc33" />
-    <img src="https://img.shields.io/badge/Express-orange" />
-    <img src="https://img.shields.io/badge/React_Router-99ccff"  />
-    <img src="https://img.shields.io/badge/Jest_Dom-99ff99"  />
-    <img src="https://img.shields.io/badge/Bootstrap-blueviolet"  />
-    <img src="https://img.shields.io/badge/Web_Vitals-ff4d4d"  />
+    <img src="https://img.shields.io/badge/JavaScript-yellow"  />
+    <img src="https://img.shields.io/badge/CSS-33cc33" />  
+    <img src="https://img.shields.io/badge/HTML-ff4d4d"  />
 </p>
 
 ## 📓 Description
@@ -26,7 +22,7 @@ JavaScript.
 
 ## 🎬 Screenshot
 
-![code-quiz](./src/assets/images/code-quiz.gif)
+![code-quiz](./assets/code-quiz.gif)
 
 ## 🃏 User Story
 
