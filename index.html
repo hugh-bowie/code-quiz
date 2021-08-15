@@ -1,27 +1,74 @@
+<!DOCTYPE html>
 <html lang="en">
+
 	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-		<title>Pop Quiz, Hotshot</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<title>Code Quiz</title>
 	</head>
+
 	<body>
-		<div class="container">
-			<div id="question-container" class="hide">
-				<div id="question">Question</div>
-				<div id="answer-buttons" class="btn-grid">
-					<button class="btn">Answer 1</button>
-					<button class="btn">Answer 2</button>
-					<button class="btn">Answer 3</button>
-					<button class="btn">Answer 4</button>
+
+		<div id="controls">
+			<div id="info">
+				<button id="scores" href="">View High Scores</button>
+				<div id="timer">
+					<p>Time: <span id="time">0</span></p>
 				</div>
 			</div>
-			<div class="controls">
-				<button id="start-btn" class="start-btn btn">Start</button>
-				<button id="next-btn" class="next-btn btn hide">Next</button>
-				<script src="script.js"></script>
-			</div>
 		</div>
+
+
+		<div id="quizBody">
+			<section id="intro">
+				<h1>JavaScript Quiz</h1>
+				<p>Answer the following JavaScript related questions within the time limit. Incorrect answers will
+					penalize your remaining time by five seconds.</p>
+
+				<button>Start!</button>
+
+			</section>
+
+			<section id="quizHolder" class="hide">
+				<p id="title"></p>
+				<button></button>
+				<button></button>
+				<button></button>
+				<button></button>
+				<div id="scoreAlert" class="invisible">
+					<p>&nbsp;</p>
+				</div>
+			</section>
+
+			<section id="finish" class="hide">
+				<h1>All Done</h1>
+				<p>Your final score is&nbsp;<span id="score"></span></p>
+				<div id="records">
+					<p>Enter initials: </p><input id="initials" type="text"> <button>Submit</button>
+				</div>
+				<div id="errorAlert" class="invisible">
+					<p>&nbsp;</p>
+				</div>
+			</section>
+
+			<section id="highScores" class="hide">
+				<h1>High Scores</h1>
+				<div>
+
+				</div>
+				<button id="reset">Go Back</button> <button id="clearScores">Clear High Scores</button>
+			</section>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="assets/js/script.js"></script>
+		<script src="assets/js/questions.js"></script>
 	</body>
+
 </html>
